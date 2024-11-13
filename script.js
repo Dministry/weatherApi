@@ -9,14 +9,14 @@ class MusicPlayer {
             {
                 title: "Sample Song 1",
                 artist: "Artist 1",
-                file: "path/to/song1.mp3",
-                albumArt: "path/to/album1.jpg"
+                file: "/assets/songs/file_example_MP3_700KB.mp3",
+                albumArt: "/assets/images/pexels-pixabay-270288.jpg"
             },
             {
                 title: "Sample Song 2",
                 artist: "Artist 2",
-                file: "path/to/song2.mp3",
-                albumArt: "path/to/album2.jpg"
+                file: "/assets/songs/beautiful-loop-253269.mp3",
+                albumArt: "/assets/images/pexels-magda-ehlers-pexels-1054713.jpg"
             }
             // Add more songs here
         ];
