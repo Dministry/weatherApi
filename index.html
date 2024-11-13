@@ -3,18 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Weather App</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Enter city name" id="city-input">
-            <button onclick="getWeather()">Search</button>
+    <div class="music-player">
+        <div class="player-header">
+            <h1>Web Music Player</h1>
         </div>
-        <div class="weather-info" id="weather-info">
-            <!-- Weather data will be displayed here -->
+        
+        <div class="now-playing">
+            <img id="album-art" src="default-album-art.jpg" alt="Album Art">
+            <div class="track-info">
+                <h2 id="track-title">No Track Selected</h2>
+                <p id="track-artist">Unknown Artist</p>
+            </div>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="time">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev" class="control-btn"><i class="fas fa-backward"></i></button>
+            <button id="play-pause" class="control-btn"><i class="fas fa-play"></i></button>
+            <button id="next" class="control-btn"><i class="fas fa-forward"></i></button>
+            <input type="range" id="volume" min="0" max="100" value="50">
+        </div>
+
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="playlist-items">
+                <!-- Playlist items will be added here dynamically -->
+            </ul>
         </div>
     </div>
     <script src="script.js"></script>
